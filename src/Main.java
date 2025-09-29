@@ -1,5 +1,8 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args) {
-        System.out.println("Nesteruk. 10.09.2025");
+//        task1.execute();
+        task3.execute();
     }
 }
