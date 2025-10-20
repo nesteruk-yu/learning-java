@@ -1,3 +1,5 @@
+package task5;
+
 import java.util.Scanner;
 
 public class Task5 {
@@ -68,19 +70,19 @@ public class Task5 {
         int chetnoe = 0;
         int nechetnoe = 0;
 
-        while (i%10==0) {
+        while (i % 10 == 0) {
             System.out.println("Введи число, которое не заканчивается на 0");
             i = in.nextInt();
         }
 
         while (i > 0) {
-            int k = i%10;
-            if (k%2==0){
-                chetnoe = chetnoe*10 + k;
-                i=(i-k)/10;
+            int k = i % 10;
+            if (k % 2 == 0) {
+                chetnoe = chetnoe * 10 + k;
+                i = (i - k) / 10;
             } else {
-                nechetnoe = nechetnoe*10 + k;
-                i=(i-k)/10;
+                nechetnoe = nechetnoe * 10 + k;
+                i = (i - k) / 10;
             }
         }
         System.out.println(chetnoe);
