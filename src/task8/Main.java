@@ -1,4 +1,4 @@
-import java.util.Scanner;
+package task8;
 
 public class Main {
 
