@@ -1,4 +1,6 @@
-//1. Создать класс Student c полями id (тип int), name (тип String), surname (тип String), faculty (факультет, тип String ), course(тип int) , Группа(тип String), средняя оценка (тип int).Инициализацию студента в классе main выполнять через конструктор с параметрами. Также определите конструктор без параметров.
+package task7;
+
+//1. Создать класс task7.Student c полями id (тип int), name (тип String), surname (тип String), faculty (факультет, тип String ), course(тип int) , Группа(тип String), средняя оценка (тип int).Инициализацию студента в классе main выполнять через конструктор с параметрами. Также определите конструктор без параметров.
 public class Student {
     int id;
     String name;
@@ -49,7 +51,7 @@ public class Student {
         this.mark = newMark;
         this.group = newGroup;
     }
-//7. Создать метод в классе Student, который будет принимать массив студентов и возвращать из этих студентов массив студентов, у которых оценка выше переданной оценки в методе. (Сигнатура метода будет выглядеть так PublicStudent[]getStudents(Students[] students, int mark)
+//7. Создать метод в классе task7.Student, который будет принимать массив студентов и возвращать из этих студентов массив студентов, у которых оценка выше переданной оценки в методе. (Сигнатура метода будет выглядеть так PublicStudent[]getStudents(Students[] students, int mark)
 
     public Student[] getStudentsMark(Student[] students, int mark) {
 
