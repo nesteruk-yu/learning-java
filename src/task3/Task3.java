@@ -1,4 +1,6 @@
-public class task3 {
+package task3;
+
+public class Task3 {
     public static void execute() {
 //1. Дано уравнение x/6+25=98. Найти x и вывести его в консоль
 //        int x = (98-25)*6;

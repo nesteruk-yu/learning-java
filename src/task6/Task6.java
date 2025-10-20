@@ -1,6 +1,6 @@
-import java.sql.SQLOutput;
+package task6;
+
 import java.util.Arrays;
-import java.util.Scanner;
 
 public class Task6 {
     public static void main(String[] args) {
