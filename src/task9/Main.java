@@ -21,11 +21,11 @@ public class Main {
 
 //1.6 Используя метод по добавлению животного в зоопарк (п.1.4) добавить по три собаки и по три птицы. (Выполнять это в методе Main, создав соответствующие объекты зоопарка, птиц, собак и т.д.)
 
-        Dog dog1 = new Dog("black", 6, "Wiskas", "Filya", "Pekines", 8);
-        Dog dog2 = new Dog("White", 8, "Corm", "Pulya", "Buldog", 12);
+        Dog dog1 = new Dog("black", 6, "Sutulaya", "Filya", "Pekines", 8);
+        Dog dog2 = new Dog("White", 8, "Sutulaya", "Pulya", "Buldog", 12);
 
         Bird bird1 = new Bird("Pink", 3, "Grass & crabs", "Flamingovoe", 10);
-        Bird bird2 = new Bird("Black", 8, "Trash", "Voronovoe", 6);
+        Bird bird2 = new Bird("Black", 7, "Trash", "Voronovoe", 6);
 
         Lion lion = new Lion("Orange", 9, "myasoed");
         Lion lion1 = new Lion("Grey", 3, "myasoed");
@@ -54,6 +54,28 @@ public class Main {
             a.makeSound();
             a.play();
             System.out.println();
+        }
+
+        Bird bird3 = new Bird("Black", 8, "Trash", "Voronovoe", 6);
+        Dog dog3 = new Dog("Pesochnuy", 3, "Royal Canin", "Puhlya", "Shpits", 4);
+
+        System.out.println(bird2.equals(bird3));
+
+        System.out.println(dog.equals(dog3));
+
+        System.out.println(bird2.hashCode());
+        System.out.println(bird3.hashCode());
+
+        if (bird2.hashCode() == bird3.hashCode()) {
+            System.out.println(bird2.equals(bird3));
+        } else {
+            System.out.println("false");
+        }
+
+        if (dog.hashCode() == dog3.hashCode()) {
+            System.out.println(dog.equals(dog3));
+        } else {
+            System.out.println("false");
         }
     }
 }
