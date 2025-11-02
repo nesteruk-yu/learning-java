@@ -27,4 +27,16 @@ public class Animal {
     public String toString() {
         return "животное: " + color + " цвета" + maxAge + " лет" + mealType + " тип питания";
     }
+
+    public String getColor() {
+        return color;
+    }
+
+    public int getMaxAge() {
+        return maxAge;
+    }
+
+    public String getMealType(){
+        return mealType;
+    }
 }

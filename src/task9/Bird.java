@@ -23,7 +23,7 @@ public class Bird extends Animal {
     }
 
     @Override
-    public void play(){
+    public void play() {
         System.out.println(this.family + " playing");
     }
 
@@ -37,4 +37,20 @@ public class Bird extends Animal {
         return "птица семейства " + family + ", максимальная высота полета " + maxHeight;
     }
 
+//1. Переопределить метод equals и hashcode в классах Птица и Собака из предыдущего задания.
+
+    @Override
+    public boolean equals(Object o) {
+        Bird bird = (Bird) o;
+        return family == bird.family &&
+                maxHeight == bird.maxHeight &&
+                super.getColor() == bird.getColor() &&
+                super.getMaxAge() == bird.getMaxAge() &&
+                super.getMealType() == bird.getMealType();
+    }
+
+    @Override
+    public int hashCode() {
+        return family.hashCode() + super.getMaxAge();
+    }
 }

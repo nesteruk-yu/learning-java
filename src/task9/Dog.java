@@ -45,4 +45,19 @@ public class Dog extends Animal {
         return "собака " + name + ", порода, " + "средний вес " + averageWeight;
     }
 
+    @Override
+    public boolean equals(Object o) {
+        Dog dog = (Dog) o;
+        return name == dog.name &&
+                poroda == dog.poroda &&
+                averageWeight == dog.averageWeight &&
+                super.getColor() == dog.getColor() &&
+                super.getMaxAge() == dog.getMaxAge() &&
+                super.getMealType() == dog.getMealType();
+    }
+
+    @Override
+    public int hashCode() {
+       return poroda.hashCode() + super.getColor().hashCode();
+    }
 }
